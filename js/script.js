@@ -28,12 +28,17 @@ console.log('JS OK');
 */
 
 // 1-
-const Nchilometri = parseInt(prompt('Quanti chilometri vuoi fare?').trim()); //1a-
+const Nchilometri = parseInt(prompt('Quanti chilometri vuoi fare? (tra 1 e 100)').trim()); //1a-
 console.log(`Vuoi percorrere ${Nchilometri} chilometri`);
 
 // -1a
 if (isNaN(Nchilometri)) {
     alert('Deve essere un numero!');
+}
+
+// 1b-
+if (Nchilometri < 1 || Nchilometri > 100) {
+    alert('Il numero dei chiloemtrideve essere compreso tra 1 e 100');
 }
 
 // 2-
