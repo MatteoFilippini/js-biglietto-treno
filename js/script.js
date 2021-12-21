@@ -63,11 +63,17 @@ console.log(`Tariffa chilometri normale: ${rate}`);
 if (age < 18) {   //4a-
     rate *= 20 / 100;
     rate = rate.toFixed(2);  //5a-
+    document.getElementById('tariffa').innerText = `Sconto minorenni applicato`;
 } else if (age > 65) {   //4b-
     rate *= 40 / 100;
     rate = rate.toFixed(2);
+    document.getElementById('tariffa').innerText = `Sconto over65 applicato`;
+} else {
+    document.getElementById('tariffa').innerText = `Nessuno sconto applicato`;
 }
 
 
+document.getElementById('tot').innerText = `${rate} euro`;
+document.getElementById('eta').innerText = `${age} anni`;
 console.log(rate);
 

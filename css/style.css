@@ -1,0 +1,27 @@
+main{
+height: 100vh;
+    padding: 50px;
+}
+
+
+
+.figure{
+    border: 3px solid rgb(6, 81, 143);
+    width: 400px;
+    height: 700px;
+    background-image: url(../img/ticket.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info{
+    border: 3px solid rgb(6, 81, 143);
+}
+
+.shop{
+    height: 100px;
+}
+
+h2,h3{
+    display: inline;
+}
