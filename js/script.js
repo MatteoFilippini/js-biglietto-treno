@@ -14,10 +14,17 @@ console.log('JS OK');
 /*
     ROAD MAP
     1- chiedere numero chilometri
+        1a- deve essere un numero
+        1b- compreso da 1<x>100
     2- chiedere eta passeggero
+        2a- deve essere un numero
+        2b- compreso da 4<x>89
     3- calcolare tariffa chilometri
     4- calcolare sconto
+        4a- per i minorenni
+        4b- per gli anziani
     5- calcolare tariffa totale
+        5a- 2 numeri dopo la virgola
 */
 
 // 1-
@@ -32,8 +39,7 @@ console.log(`Hai ${age} anni`);
 let rate = Nchilometri * 0.21;
 console.log(rate);
 
-// 4-
-
+// 4-5
 if (age < 18) {
     rate *= 2 / 100;
 }
