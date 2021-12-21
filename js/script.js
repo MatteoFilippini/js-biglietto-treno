@@ -62,6 +62,7 @@ console.log(rate);
 // 4-5
 if (age < 18) {
     rate *= 2 / 100;
+    rate = rate.toFixed(2);
 }
 console.log(rate);
 
