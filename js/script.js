@@ -28,8 +28,14 @@ console.log(`Vuoi percorrere ${Nchilometri} chilometri`);
 const age = prompt('quanti anni hai?', '8');
 console.log(`Hai ${age} anni`);
 
+// 3-
 let rate = Nchilometri * 0.21;
 console.log(rate);
 
+// 4-
 
+if (age < 18) {
+    rate *= 2 / 100;
+}
+console.log(rate);
 
