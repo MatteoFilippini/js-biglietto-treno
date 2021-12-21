@@ -28,8 +28,13 @@ console.log('JS OK');
 */
 
 // 1-
-const Nchilometri = prompt('quanti chilometri vuoi fare?', '2');
+const Nchilometri = parseInt(prompt('Quanti chilometri vuoi fare?').trim()); //1a-
 console.log(`Vuoi percorrere ${Nchilometri} chilometri`);
+
+// -1a
+if (isNaN(Nchilometri)) {
+    alert('Deve essere un numero!');
+}
 
 // 2-
 const age = prompt('quanti anni hai?', '8');
