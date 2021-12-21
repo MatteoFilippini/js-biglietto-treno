@@ -57,12 +57,17 @@ if (age < 4 || age > 89) {
 
 // 3-
 let rate = Nchilometri * 0.21;
-console.log(rate);
+console.log(`Tariffa chilometri normale: ${rate}`);
 
 // 4-5
-if (age < 18) {
-    rate *= 2 / 100;
+if (age < 18) {   //4a-
+    rate *= 20 / 100;
+    rate = rate.toFixed(2);  //5a-
+} else if (age > 65) {   //4b-
+    rate *= 40 / 100;
     rate = rate.toFixed(2);
 }
+
+
 console.log(rate);
 
