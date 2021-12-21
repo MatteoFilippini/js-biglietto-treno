@@ -20,7 +20,12 @@ console.log('JS OK');
     5- calcolare tariffa totale
 */
 
+// 1-
 const Nchilometri = prompt('quanti chilometri vuoi fare?', '2');
 console.log(`Vuoi percorrere ${Nchilometri} chilometri`);
+
+// 2-
+const age = prompt('quanti anni hai?', '8');
+console.log(`Hai ${age} anni`);
 
 
