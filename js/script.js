@@ -38,7 +38,7 @@ if (isNaN(Nchilometri)) {
 
 // 1b-
 if (Nchilometri < 1 || Nchilometri > 100) {
-    alert('Il numero dei chiloemtrideve essere compreso tra 1 e 100');
+    alert('Il numero dei chiloemtri deve essere compreso tra 1 e 100');
 }
 
 // 2-
@@ -48,6 +48,11 @@ console.log(`Hai ${age} anni`);
 // 2a-
 if (isNaN(age)) {
     alert('Deve essere un numero!');
+}
+
+// 2b-
+if (age < 4 || age > 89) {
+    alert('Per viaggiare devi avere un eta compesa tra i 4 e gli 89 anni');
 }
 
 // 3-
