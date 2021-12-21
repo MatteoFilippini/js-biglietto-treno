@@ -42,8 +42,13 @@ if (Nchilometri < 1 || Nchilometri > 100) {
 }
 
 // 2-
-const age = prompt('quanti anni hai?', '8');
+const age = parseInt(prompt('quanti anni hai?').trim()); //2a-
 console.log(`Hai ${age} anni`);
+
+// 2a-
+if (isNaN(age)) {
+    alert('Deve essere un numero!');
+}
 
 // 3-
 let rate = Nchilometri * 0.21;
