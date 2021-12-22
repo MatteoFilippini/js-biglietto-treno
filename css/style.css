@@ -25,3 +25,7 @@ height: 100vh;
 h2,h3{
     display: inline;
 }
+
+.red{
+    color: red;
+}

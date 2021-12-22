@@ -31,8 +31,8 @@ console.log('JS OK');
 const Nchilometri = parseInt(prompt('Quanti chilometri vuoi fare? (tra 1 e 100)').trim()); //1a-
 console.log(`Vuoi percorrere ${Nchilometri} chilometri`);
 
-// -1a
-if (isNaN(Nchilometri)) {
+// 1a- 2a-
+if (isNaN(Nchilometri) && isNaN(age)) {
     alert('Deve essere un numero!');
 }
 
@@ -45,11 +45,6 @@ if (Nchilometri < 1 || Nchilometri > 100) {
 const age = parseInt(prompt('quanti anni hai?').trim()); //2a-
 console.log(`Hai ${age} anni`);
 
-// 2a-
-if (isNaN(age)) {
-    alert('Deve essere un numero!');
-}
-
 // 2b-
 if (age < 4 || age > 89) {
     alert('Per viaggiare devi avere un eta compesa tra i 4 e gli 89 anni');
@@ -61,19 +56,18 @@ console.log(`Tariffa chilometri normale: ${rate}`);
 
 // 4-5
 if (age < 18) {   //4a-
-    rate *= 20 / 100;
-    rate = rate.toFixed(2);  //5a-
+    rate *= 0.8;
     document.getElementById('tariffa').innerText = `Sconto minorenni applicato`;
 } else if (age > 65) {   //4b-
-    rate *= 40 / 100;
-    rate = rate.toFixed(2);
+    rate *= 0.6;
     document.getElementById('tariffa').innerText = `Sconto over65 applicato`;
 } else {
-    document.getElementById('tariffa').innerText = `Nessuno sconto applicato`;
+    document.getElementById('tariffa').innerText = `BIGLIETTO TRENITALIA`;
 }
 
-
+rate = rate.toFixed(2);  //5a-
 document.getElementById('tot').innerText = `${rate} euro`;
 document.getElementById('eta').innerText = `${age} anni`;
+document.getElementById('kms').innerText = `${Nchilometri} Km`;
 console.log(rate);
 
